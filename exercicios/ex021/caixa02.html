@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #FFF7F3;
+            margin: 0px;
+        }
+        header {
+            background-color: #FBEBD1;
+            padding: 10px;
+            margin: 10px;
+
+        }
+        main {
+            background-color: #FBEBD1;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 20px 30px 35px;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+        footer > p {
+            background-color: black;
+            margin: 0px;
+            padding: 4px;
+        }
+        p {
+            background-color: #FBEBD1;
+        }
+        #tarticle {
+            text-align: right;
+            background-color: white;
+        } 
+        article > aside {
+            background-color: #FBEBD1;
+            text-align: right;
+            font-size: 12px;
+        }
+        nav {
+            background-color: rgb(88, 86, 86);
+            padding: 3px;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.432);
+        }
+        nav > a {
+            padding: 3px;
+            text-decoration: none;
+            color: white;
+            font-weight: lighter;
+            margin-right: 30px;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+            color: red;
+            
+        }
+        h2 {
+            background-color: rgb(88, 86, 86);
+            color: white;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.432);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lina Decorando</h1>
+        <nav> 
+            <a target="_blank" href="https://www.instagram.com/linadecorando/ ">Instagram</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <h2>Esportes Política Tecnologia</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis consectetur eos rem est voluptatem ducimus dolore, qui obcaecati facere eum beatae perferendis quia ullam nulla voluptatibus, maiores similique recusandae. Quisquam!</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícicas sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A voluptatum velit temporibus veritatis veniam id dolore incidunt quas iusto. Quod soluta asperiores saepe nostrum. Quae tempora ut explicabo at quas.</p>
+                <aside>
+                    Artigo escrito por Bruno Luis
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer><p>
+        Desenvolvido por Bruno Luis
+    </p></footer>
+    <div id="bola"></div>
+</body>
+</html>

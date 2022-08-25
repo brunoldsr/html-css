@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    
+        <picture>
+            <source media="(max-width: 750px )" srcset="imagens/foto_p.png" type="image/png"> <!--CASO O NAVEGADOR TIVER MENOS DE 750, CARREGA A PEQUENA-->
+            <source media="(max-width: 1050px)" srcset="imagens/foto_m.png" type="image/png"> <!--CASO O NAVEGADOR TIVER MENOS DE 1050, CARREGA A MÉDIA-->
+            <img src="imagens/foto_g.png" alt="imagem_flexivel.png"> <!--POR PADRÃO CARREGA A IMAGEM GRANDE. SEGUIR A ORDEM, GRANDE EM BAIXO, PEQUENA EM CIMA-->
+        </picture>
+
+        <h1>Reproduzindo Áudio</h1>
+        <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+        <audio src="midias/A GLÓRIA DA SEGUNDA CASA Michelle Nascimento PLAYBAC.mp3" controls autoplay></audio>
+
+        <p>Outra forma de adicionar áudio:</p>
+        <audio preload="metadata" autoplay controls loop> 
+            <source src="midias/A GLÓRIA DA SEGUNDA CASA Michelle Nascimento PLAYBAC.mp3" type="audios/mpeg">
+            <source src="midias/A GLÓRIA DA SEGUNDA CASA Michelle Nascimento PLAYBAC.ogg" type="audios/ogg">
+            <source src="midias/A GLÓRIA DA SEGUNDA CASA Michelle Nascimento PLAYBAC.wav" type="audios/wav">
+            <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midias/A GLÓRIA DA SEGUNDA CASA Michelle Nascimento PLAYBAC.mp3">Clique aqui</a> para baixar o arquivo mp3.</p> <!--O SITE VAI TENTAR REPRODUZIR DE CIMA PARA BAIXO. CASO NÃO CONSIGA REPRODUZIR EM NENHUM FORMATO, VAI EXIBIR A MENSAGEM.-->
+        </audio>
+</body>
+</html>

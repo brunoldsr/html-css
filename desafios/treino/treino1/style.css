@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+header {
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    width: 750px;
+    height: 250px;
+    padding-top: 75px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+}
+p.click {
+    width: 150px;
+    height: 50px;
+    background-color: #8a8a8a;
+    margin: auto;
+    margin-top: 30px;
+}
+p.click > a {
+    color: white;
+    text-align: center;
+    text-decoration: none; 
+}
+
+main {
+    background-color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    width: 750px;
+    height: 1000px;
+}
+
+footer {
+    width: 750px;
+    height: 375px;
+    margin: auto;
+}
+h2.primeiroh2 {
+    background-color: white;
+    text-align: center;
+    color: #757575;
+}
+p.primeirop {
+    background-color: white;
+    text-align: center;
+    color: #555555;
+    columns: 2;  
+}
+p.especial {
+    columns: 3;
+}
