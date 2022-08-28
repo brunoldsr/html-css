@@ -9,9 +9,16 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative; /*necessario para deixar o cabeçalho fixo*/
         }
         th, td {
             border: 1px solid black;
@@ -20,6 +27,14 @@
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+        thead > tr > th{
+            position: sticky; /*posição grudável*/
+            top: -1px; /* tô dizendo que ele vai colar no top -1px*/
+            background-color: darkgray; /*colocar backgroundcolor*/
+        }
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
         }
         td.num {
             text-align: right;
@@ -37,10 +52,11 @@
             TFOOT
                 TR, TD, TH  --> 
      <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px">População</th> <!--aqui é col pq os dados estão na coluna-->
             </tr>
         </thead>
         <tbody>
@@ -156,10 +172,20 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th> <!--aqui é rol pq os dados estão na linha-->
                 <td class="num"><strong>210.147.125</strong></td>
             </tr>
         </tfoot>
      </table>
+     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fuga deleniti recusandae praesentium omnis animi culpa molestiae doloremque ducimus excepturi. Possimus, doloremque! Tempora, at! Nobis laborum accusantium accusamus nam debitis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima a incidunt esse unde ullam veritatis commodi eaque est! Eos tempore a ratione, iure aspernatur atque suscipit nisi? Ratione, consectetur mollitia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam illum inventore sapiente tempore? Natus eveniet temporibus voluptatibus, eos suscipit quo exercitationem assumenda tempora fugiat atque quaerat ducimus dolorem, officiis ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates iste dolorum iusto, culpa vero facere, alias molestiae sapiente ex harum, tempora maxime ab? Cupiditate quia exercitationem nemo nam tempora minus. </p>
+     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fuga deleniti recusandae praesentium omnis animi culpa molestiae doloremque ducimus excepturi. Possimus, doloremque! Tempora, at! Nobis laborum accusantium accusamus nam debitis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima a incidunt esse unde ullam veritatis commodi eaque est! Eos tempore a ratione, iure aspernatur atque suscipit nisi? Ratione, consectetur mollitia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam illum inventore sapiente tempore? Natus eveniet temporibus voluptatibus, eos suscipit quo exercitationem assumenda tempora fugiat atque quaerat ducimus dolorem, officiis ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates iste dolorum iusto, culpa vero facere, alias molestiae sapiente ex harum, tempora maxime ab? Cupiditate quia exercitationem nemo nam tempora minus. </p>
+     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fuga deleniti recusandae praesentium omnis animi culpa molestiae doloremque ducimus excepturi. Possimus, doloremque! Tempora, at! Nobis laborum accusantium accusamus nam debitis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima a incidunt esse unde ullam veritatis commodi eaque est! Eos tempore a ratione, iure aspernatur atque suscipit nisi? Ratione, consectetur mollitia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam illum inventore sapiente tempore? Natus eveniet temporibus voluptatibus, eos suscipit quo exercitationem assumenda tempora fugiat atque quaerat ducimus dolorem, officiis ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates iste dolorum iusto, culpa vero facere, alias molestiae sapiente ex harum, tempora maxime ab? Cupiditate quia exercitationem nemo nam tempora minus. </p>
+     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fuga deleniti recusandae praesentium omnis animi culpa molestiae doloremque ducimus excepturi. Possimus, doloremque! Tempora, at! Nobis laborum accusantium accusamus nam debitis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima a incidunt esse unde ullam veritatis commodi eaque est! Eos tempore a ratione, iure aspernatur atque suscipit nisi? Ratione, consectetur mollitia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam illum inventore sapiente tempore? Natus eveniet temporibus voluptatibus, eos suscipit quo exercitationem assumenda tempora fugiat atque quaerat ducimus dolorem, officiis ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates iste dolorum iusto, culpa vero facere, alias molestiae sapiente ex harum, tempora maxime ab? Cupiditate quia exercitationem nemo nam tempora minus. </p>
+     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fuga deleniti recusandae praesentium omnis animi culpa molestiae doloremque ducimus excepturi. Possimus, doloremque! Tempora, at! Nobis laborum accusantium accusamus nam debitis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima a incidunt esse unde ullam veritatis commodi eaque est! Eos tempore a ratione, iure aspernatur atque suscipit nisi? Ratione, consectetur mollitia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam illum inventore sapiente tempore? Natus eveniet temporibus voluptatibus, eos suscipit quo exercitationem assumenda tempora fugiat atque quaerat ducimus dolorem, officiis ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates iste dolorum iusto, culpa vero facere, alias molestiae sapiente ex harum, tempora maxime ab? Cupiditate quia exercitationem nemo nam tempora minus. </p>
+     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fuga deleniti recusandae praesentium omnis animi culpa molestiae doloremque ducimus excepturi. Possimus, doloremque! Tempora, at! Nobis laborum accusantium accusamus nam debitis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima a incidunt esse unde ullam veritatis commodi eaque est! Eos tempore a ratione, iure aspernatur atque suscipit nisi? Ratione, consectetur mollitia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam illum inventore sapiente tempore? Natus eveniet temporibus voluptatibus, eos suscipit quo exercitationem assumenda tempora fugiat atque quaerat ducimus dolorem, officiis ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates iste dolorum iusto, culpa vero facere, alias molestiae sapiente ex harum, tempora maxime ab? Cupiditate quia exercitationem nemo nam tempora minus. </p>
+     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fuga deleniti recusandae praesentium omnis animi culpa molestiae doloremque ducimus excepturi. Possimus, doloremque! Tempora, at! Nobis laborum accusantium accusamus nam debitis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima a incidunt esse unde ullam veritatis commodi eaque est! Eos tempore a ratione, iure aspernatur atque suscipit nisi? Ratione, consectetur mollitia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam illum inventore sapiente tempore? Natus eveniet temporibus voluptatibus, eos suscipit quo exercitationem assumenda tempora fugiat atque quaerat ducimus dolorem, officiis ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates iste dolorum iusto, culpa vero facere, alias molestiae sapiente ex harum, tempora maxime ab? Cupiditate quia exercitationem nemo nam tempora minus. </p>
+     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fuga deleniti recusandae praesentium omnis animi culpa molestiae doloremque ducimus excepturi. Possimus, doloremque! Tempora, at! Nobis laborum accusantium accusamus nam debitis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima a incidunt esse unde ullam veritatis commodi eaque est! Eos tempore a ratione, iure aspernatur atque suscipit nisi? Ratione, consectetur mollitia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam illum inventore sapiente tempore? Natus eveniet temporibus voluptatibus, eos suscipit quo exercitationem assumenda tempora fugiat atque quaerat ducimus dolorem, officiis ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates iste dolorum iusto, culpa vero facere, alias molestiae sapiente ex harum, tempora maxime ab? Cupiditate quia exercitationem nemo nam tempora minus. </p>
+     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fuga deleniti recusandae praesentium omnis animi culpa molestiae doloremque ducimus excepturi. Possimus, doloremque! Tempora, at! Nobis laborum accusantium accusamus nam debitis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima a incidunt esse unde ullam veritatis commodi eaque est! Eos tempore a ratione, iure aspernatur atque suscipit nisi? Ratione, consectetur mollitia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam illum inventore sapiente tempore? Natus eveniet temporibus voluptatibus, eos suscipit quo exercitationem assumenda tempora fugiat atque quaerat ducimus dolorem, officiis ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates iste dolorum iusto, culpa vero facere, alias molestiae sapiente ex harum, tempora maxime ab? Cupiditate quia exercitationem nemo nam tempora minus. </p>
+
 </body>
 </html>
