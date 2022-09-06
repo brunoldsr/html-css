@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem dentro de uma tag</title>
+    <style>
+
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: aqua;
+            height: 50px;
+        }
+
+        .pai {
+            position: relative;
+            height: 400px;
+            background-color: #8b5c5c;
+        }
+        .filho {
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            background-color: orangered;
+            /*opção 1*/
+            bottom: 0;
+            right: 0;
+            left: 0;
+            top: 0;
+            margin: auto;
+            /*opção 2 
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%); */
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Centralizar no CSS</h1>
+    <div class="pai">
+
+        <div class="filho">
+
+        </div>
+
+    </div>
+</body>
+</html>
