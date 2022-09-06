@@ -4,26 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imagem dentro de uma tag</title>
+    <title>Centralizando conteúdo em container</title>
     <style>
 
         * {
             padding: 0px;
             margin: 0px;
         }
-
-        h1 {
-            text-align: center;
-            background-color: aqua;
-            height: 50px;
-        }
-
-        .pai {
+        
+        #pai {
             position: relative;
             height: 400px;
+            width: 400px;
             background-color: #8b5c5c;
+           
         }
-        .filho {
+        #filho {
             position: absolute;
             height: 100px;
             width: 100px;
@@ -43,10 +39,9 @@
     </style>
 </head>
 <body>
-    <h1>Centralizar no CSS</h1>
-    <div class="pai">
+    <div id="pai">
 
-        <div class="filho">
+        <div id="filho">
 
         </div>
 
